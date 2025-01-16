@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicas", "CitasMedicas\CitasMedicas.csproj", "{01B62B76-AE17-4543-904E-3534CC5B9699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectCitas", "TestProjectCitas\TestProjectCitas.csproj", "{976F77B2-61CB-48E7-A8A4-181E265559EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01B62B76-AE17-4543-904E-3534CC5B9699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B62B76-AE17-4543-904E-3534CC5B9699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B62B76-AE17-4543-904E-3534CC5B9699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B62B76-AE17-4543-904E-3534CC5B9699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976F77B2-61CB-48E7-A8A4-181E265559EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976F77B2-61CB-48E7-A8A4-181E265559EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976F77B2-61CB-48E7-A8A4-181E265559EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976F77B2-61CB-48E7-A8A4-181E265559EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
