@@ -32,21 +32,57 @@ namespace CitasMedicas.Controllers
 		}
 
 		[HttpPost]
-		public async Task<ActionResult<Doctor>> PostDoctor(Doctor doctor)
+		public async Task<ActionResult<Doctor>> PostDoctor([FromBody] Doctor doctor)
 		{
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
 			_context.Doctores.Add(doctor);
 			await _context.SaveChangesAsync();
 			return CreatedAtAction(nameof(GetDoctor), new { id = doctor.id_doctor }, doctor);
 		}
 
 		[HttpPut("{id}")]
-		public async Task<IActionResult> PutDoctor(int id, Doctor doctor)
+		public async Task<IActionResult> PutDoctor(int id, [FromBody] Doctor doctor)
 		{
-			if (id != doctor.id_doctor) return BadRequest();
+			if (id != doctor.id_doctor)
+			{
+				return BadRequest("El ID de la URL no coincide con el ID del cuerpo de la solicitud.");
+			}
+
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
 			_context.Entry(doctor).State = EntityState.Modified;
-			await _context.SaveChangesAsync();
+
+			try
+			{
+				await _context.SaveChangesAsync();
+			}
+			catch (DbUpdateConcurrencyException)
+			{
+				if (!DoctorExists(id))
+				{
+					return NotFound();
+				}
+				else
+				{
+					throw;
+				}
+			}
+
 			return NoContent();
 		}
+
+		private bool DoctorExists(int id)
+		{
+			return _context.Doctores.Any(e => e.id_doctor == id);
+		}
+
 
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteDoctor(int id)

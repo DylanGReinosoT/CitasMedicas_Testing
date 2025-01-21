@@ -1,0 +1,6 @@
+projectKey=TestingCitas
+serverUrl=http://localhost:9000
+serverVersion=25.1.0.102122
+dashboardUrl=http://localhost:9000/dashboard?id=TestingCitas
+ceTaskId=a8ed4211-b619-4549-803d-478e5ebacee5
+ceTaskUrl=http://localhost:9000/api/ce/task?id=a8ed4211-b619-4549-803d-478e5ebacee5

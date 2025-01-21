@@ -39,6 +39,13 @@ namespace CitasMedicas.Controllers
 				return BadRequest(ModelState);
 			}
 
+			DateTime fechaDeHoy = DateTime.Today;
+			//Validad la fecha
+			if (paciente.fecha_nacimiento > fechaDeHoy)
+			{
+				return BadRequest("Fecha invalida");
+			}
+
 			_context.Pacientes.Add(paciente);
 			await _context.SaveChangesAsync();
 			return CreatedAtAction(nameof(GetPaciente), new { id = paciente.id_paciente }, paciente);

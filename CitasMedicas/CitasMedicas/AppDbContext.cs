@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Numerics;
 namespace CitasMedicas
 {
@@ -38,7 +39,7 @@ namespace CitasMedicas
 		public class Paciente
 		{
 			[Key]
-			public int id_paciente { get; set; }
+			public int? id_paciente { get; set; }
 
 			[Required]
 			public string? nombre { get; set; }
@@ -47,7 +48,7 @@ namespace CitasMedicas
 			public string? apellido { get; set; }
 
 			[Required]
-			public DateTime fecha_nacimiento { get; set; }
+			public DateTime? fecha_nacimiento { get; set; }
 
 			public string? telefono { get; set; }
 			public string? direccion { get; set; }
@@ -63,7 +64,7 @@ namespace CitasMedicas
 		public class Doctor
 		{
 			[Key]
-			public int id_doctor { get; set; }
+			public int? id_doctor { get; set; }
 
 			[Required]
 			public string? nombre { get; set; }
@@ -77,11 +78,14 @@ namespace CitasMedicas
 			public string? telefono { get; set; }
 			public string? correo { get; set; }
 
-			public ICollection<Cita> Citas { get; set; }
+			// Inicializa la colección de Citas para evitar problemas de validación
+			public ICollection<Cita> Citas { get; set; } = new List<Cita>();
 		}
+
 		public class Cita
 		{
 			[Key]
+	
 			public int id_cita { get; set; }
 
 			[Required]
@@ -91,19 +95,23 @@ namespace CitasMedicas
 			public int id_doctor { get; set; }
 
 			[Required]
-			public DateTime fecha_hora { get; set; }
+			public DateTime? fecha_hora { get; set; }
 
 			public string? estado { get; set; } // "Pendiente", "Confirmada", "Cancelada", "Realizada"
 			public string? descripcion { get; set; }
 
-			public Paciente Paciente { get; set; }
-			public Doctor Doctor { get; set; }
-			public ICollection<Procedimiento> Procedimientos { get; set; }
+			// No hacemos las propiedades de navegación requeridas
+			public virtual Paciente? Paciente { get; set; }
+			public virtual Doctor? Doctor { get; set; }
+			public virtual ICollection<Procedimiento>? Procedimientos { get; set; }
 		}
+
+
 
 		public class Procedimiento
 		{
 			[Key]
+			[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 			public int id_procedimiento { get; set; }
 
 			[Required]
@@ -115,8 +123,10 @@ namespace CitasMedicas
 			[Required]
 			public int id_cita { get; set; }
 
-			public Cita Cita { get; set; }
+			// No hacemos la propiedad de navegación requerida
+			public virtual Cita? Cita { get; set; }
 		}
+
 	}
 }
 

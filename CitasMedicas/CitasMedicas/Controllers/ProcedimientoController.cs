@@ -37,22 +37,59 @@ namespace CitasMedicas.Controllers
 
 		// Crear un nuevo procedimiento
 		[HttpPost]
-		public async Task<ActionResult<Procedimiento>> PostProcedimiento(Procedimiento procedimiento)
+		public async Task<ActionResult<Procedimiento>> PostProcedimiento([FromBody] Procedimiento procedimiento)
 		{
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
 			_context.Procedimientos.Add(procedimiento);
 			await _context.SaveChangesAsync();
 			return CreatedAtAction(nameof(GetProcedimiento), new { id = procedimiento.id_procedimiento }, procedimiento);
 		}
 
+
 		// Actualizar un procedimiento existente
 		[HttpPut("{id}")]
-		public async Task<IActionResult> PutProcedimiento(int id, Procedimiento procedimiento)
+		public async Task<IActionResult> PutProcedimiento(int id, [FromBody] Procedimiento procedimiento)
 		{
-			if (id != procedimiento.id_procedimiento) return BadRequest();
+			if (id != procedimiento.id_procedimiento)
+			{
+				return BadRequest("El ID de la URL no coincide con el ID del cuerpo de la solicitud.");
+			}
+
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
 			_context.Entry(procedimiento).State = EntityState.Modified;
-			await _context.SaveChangesAsync();
+
+			try
+			{
+				await _context.SaveChangesAsync();
+			}
+			catch (DbUpdateConcurrencyException)
+			{
+				if (!ProcedimientoExists(id))
+				{
+					return NotFound();
+				}
+				else
+				{
+					throw;
+				}
+			}
+
 			return NoContent();
 		}
+
+		private bool ProcedimientoExists(int id)
+		{
+			return _context.Procedimientos.Any(e => e.id_procedimiento == id);
+		}
+
 
 		// Eliminar un procedimiento por su ID
 		[HttpDelete("{id}")]

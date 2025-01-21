@@ -1,0 +1,14 @@
+Å
+vC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.MvcApplicationPartsAssemblyInfo.csutf-8n
+cC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.AssemblyInfo.csutf-8Ä
+uC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8p
+eC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.GlobalUsings.g.csutf-8I
+@C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Program.csutf-8h
+]C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Migrations\AppDbContextModelSnapshot.csutf-8t
+iC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Migrations\20250116150812_InitialCreate.Designer.csutf-8i
+`C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Migrations\20250116150812_InitialCreate.csutf-8e
+\C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\ProcedimientoController.csutf-8a
+XC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\PacientesController.csutf-8^
+UC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\DoctorController.csutf-8]
+TC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\CitasController.csutf-8N
+EC:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\AppDbContext.csutf-8

@@ -169,3 +169,4 @@ C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\refint\Ci
 C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.pdb
 C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.genruntimeconfig.cache
 C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\ref\CitasMedicas.dll
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

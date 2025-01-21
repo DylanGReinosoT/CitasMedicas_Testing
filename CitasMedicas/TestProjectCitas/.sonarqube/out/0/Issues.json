@@ -1,0 +1,575 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.12.0.0",
+        "fileVersion": "4.12.0-3.24570.6 (913fb4ec)",
+        "semanticVersion": "4.12.0",
+        "language": "es-ES"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Pacientes\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 10,
+                  "endLine": 10,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 26,
+                  "endLine": 15,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Doctores\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 10,
+                  "endLine": 10,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Citas\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 10,
+                  "endLine": 10,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 22,
+                  "endLine": 17,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Procedimientos\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required'\"o declarar el propiedad como un valor que acepta valores NULL.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 10,
+                  "endLine": 10,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/AppDbContext.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 31,
+                  "endLine": 18,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/appsettings.json",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 27,
+                  "endLine": 10,
+                  "endColumn": 154
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'SqlServer:Identity' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 37,
+                  "endLine": 19,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 37,
+                  "endLine": 36,
+                  "endColumn": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 37,
+                  "endLine": 54,
+                  "endColumn": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 37,
+                  "endLine": 83,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'nvarchar(max)' 13 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 57,
+                  "endLine": 20,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 59,
+                  "endLine": 21,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 63,
+                  "endLine": 22,
+                  "endColumn": 78
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 59,
+                  "endLine": 23,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 57,
+                  "endLine": 24,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 57,
+                  "endLine": 37,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 59,
+                  "endLine": 38,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 59,
+                  "endLine": 40,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 60,
+                  "endLine": 41,
+                  "endColumn": 75
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 57,
+                  "endLine": 42,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 57,
+                  "endLine": 58,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 62,
+                  "endLine": 59,
+                  "endColumn": 77
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 62,
+                  "endLine": 84,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "10": null,
+              "11": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Citas' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 23,
+                  "endLine": 50,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 41,
+                  "endLine": 94,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 24,
+                  "endLine": 101,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 24,
+                  "endLine": 106,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Migrations/20250116150812_InitialCreate.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 23,
+                  "endLine": 122,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/CitasMedicas/Program.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 1,
+                  "endLine": 39,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador \"required\" o declararlo como un valor que acepta valores NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

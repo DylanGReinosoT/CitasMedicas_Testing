@@ -1,0 +1,17 @@
+﻿C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\AppDbContext.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\CitasController.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\DoctorController.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\PacientesController.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Controllers\ProcedimientoController.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Migrations\20250116150812_InitialCreate.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Migrations\20250116150812_InitialCreate.Designer.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Migrations\AppDbContextModelSnapshot.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Program.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.GlobalUsings.g.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.AssemblyInfo.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\obj\Debug\net8.0\CitasMedicas.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\appsettings.Development.json
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\appsettings.json
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\CitasMedicas.http
+C:\Users\Admin\source\repos\CitasMedicas\CitasMedicas\Properties\launchSettings.json

@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.12.0.0",
+        "fileVersion": "4.12.0-3.24570.6 (913fb4ec)",
+        "semanticVersion": "4.12.0",
+        "language": "es-ES"
+      },
+      "results": [
+        {
+          "ruleId": "CS1061",
+          "level": "error",
+          "message": "\"DbContextOptionsBuilder<AppDbContext>\" no contiene una definición para \"UseInMemoryDatabase\" ni un método de extensión accesible \"UseInMemoryDatabase\" que acepte un primer argumento del tipo \"DbContextOptionsBuilder<AppDbContext>\" (¿falta alguna directiva using o una referencia de ensamblado?)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/TestProjectCitas/PacientesControllerTest.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 6,
+                  "endLine": 20,
+                  "endColumn": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS1061",
+          "level": "error",
+          "message": "\"DbContextOptionsBuilder<AppDbContext>\" no contiene una definición para \"UseInMemoryDatabase\" ni un método de extensión accesible \"UseInMemoryDatabase\" que acepte un primer argumento del tipo \"DbContextOptionsBuilder<AppDbContext>\" (¿falta alguna directiva using o una referencia de ensamblado?)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/TestProjectCitas/PacientesControllerTest.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 6,
+                  "endLine": 50,
+                  "endColumn": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS1061",
+          "level": "error",
+          "message": "\"DbContextOptionsBuilder<AppDbContext>\" no contiene una definición para \"UseInMemoryDatabase\" ni un método de extensión accesible \"UseInMemoryDatabase\" que acepte un primer argumento del tipo \"DbContextOptionsBuilder<AppDbContext>\" (¿falta alguna directiva using o una referencia de ensamblado?)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/TestProjectCitas/PacientesControllerTest.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 6,
+                  "endLine": 93,
+                  "endColumn": 25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "S2699",
+          "level": "warning",
+          "message": "Add at least one assertion to this test case.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/Admin/source/repos/CitasMedicas/TestProjectCitas/UnitTest1.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 15,
+                  "endLine": 6,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS1061": {
+          "id": "CS1061",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1061)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
+            ]
+          }
+        },
+        "S2699": {
+          "id": "S2699",
+          "shortDescription": "Tests should include assertions",
+          "fullDescription": "The rule targets test methods that lack an assertion and consist solely of an action and, optionally, a setup.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2699",
+          "properties": {
+            "category": "Blocker Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

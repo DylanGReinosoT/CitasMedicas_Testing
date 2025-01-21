@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\CitasMedicas\TestProjectCitas\bin\Debug\net8.0\CoverletSourceRootsMapping_TestProjectCitas
+C:\Users\Admin\source\repos\CitasMedicas\TestProjectCitas\obj\Debug\net8.0\TestProjectCitas.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\CitasMedicas\TestProjectCitas\obj\Debug\net8.0\TestProjectCitas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\CitasMedicas\TestProjectCitas\obj\Debug\net8.0\TestProjectCitas.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\CitasMedicas\TestProjectCitas\obj\Debug\net8.0\TestProjectCitas.AssemblyInfo.cs
+C:\Users\Admin\source\repos\CitasMedicas\TestProjectCitas\obj\Debug\net8.0\TestProjectCitas.csproj.CoreCompileInputs.cache
